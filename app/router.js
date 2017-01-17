@@ -10,8 +10,13 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('board', { path: 'boards/:board_id' });
+
   this.route('boards');
+  this.route('boards/new');
+  this.route('board', { path: 'boards/:board_id' });
+  this.route('board/edit', { path: 'boards/:board_id/edit' });
+
+  this.route('board-details', function() {});
 });
 
 export default Router;

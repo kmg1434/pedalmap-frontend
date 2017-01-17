@@ -1,0 +1,6 @@
+<form {{action 'save' on='submit'}}>
+  {{input placeholder='Board Title'
+          value=board.name}}
+  <button type='submit' class='btn btn-xs'>Save</button>
+  <button {{action 'cancel'}} class='btn btn-xs btn-danger'>Cancel</button>
+</form>
