@@ -1,0 +1,17 @@
+<h2>Your Saved Boards:</h2>
+
+{{#each model as |board|}}
+  <ul class="board-list">
+    <li><a href="boards/${board.id}">{{board.name}}</a></li>
+    <li>{{board.id}}</li>
+  </ul>
+  {{!-- {{board board=board
+                    edit='editBoard'
+                    deleteList='deleteBoard'}} --}}
+{{/each}}
+
+{{!-- {{#link-to 'boards/new'}}
+  Add a New Board
+{{/link-to}} --}}
+
+{{outlet}}
