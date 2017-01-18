@@ -5,5 +5,5 @@ export default DS.Model.extend({
   length: DS.attr('number'),
   width: DS.attr('number'),
   link: DS.attr('string'),
-  boards: DS.hasMany('board'), // not sure about this
+  // boards: DS.hasMany('board'), // not sure about this
 });

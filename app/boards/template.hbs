@@ -1,9 +1,10 @@
-<h2>Your Saved Boards:</h2>
+<h4>Your Saved Boards:</h4>
 
 {{#each model as |board|}}
-  {{board-details/card board=board
+  {{board-list/card board=board
+                       deleteBoard='deleteBoard'
                        cancel='cancelCreateBoard'
-                       edit='editBoard'}}
+                       editBoard='editBoard'}}
 {{/each}}
 
 {{#link-to 'boards/new'}}

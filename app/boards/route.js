@@ -6,5 +6,13 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    editBoard (board) {
+      this.transitionTo('boards/new');
+    },
+
+    deleteBoard (board) {
+      console.log('inside boards/route.js');
+      board.destroyRecord();
+    },
   },
 });
