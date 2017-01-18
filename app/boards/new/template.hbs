@@ -1,6 +1,1 @@
-<form {{action 'save' on='submit'}}>
-  {{input placeholder='Board Title'
-          value=board.name}}
-  <button type='submit' class='btn btn-xs'>Save</button>
-  <button {{action 'cancelCreateBoard'}} class='btn btn-xs btn-danger'>Cancel</button>
-</form>
+{{board-details/edit board=model save='save'}}
