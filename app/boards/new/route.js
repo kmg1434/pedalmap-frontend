@@ -2,11 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model () {
-    // return this.get('store').createRecord('board', {});
+    console.log('this is ', this.get('store'));
+
+    // why does this line fuck everything?
+    return this.get('store').createRecord('board', {});
   },
 
   actions: {
-    createBoard (board) {
+    save (board) {
       board.save();
     },
 

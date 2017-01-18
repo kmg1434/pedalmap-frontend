@@ -1,7 +1,8 @@
 <h2>Your Saved Boards:</h2>
 
 {{#each model as |board|}}
-  {{board-details/card board=board}}
+  {{board-details/card board=board
+                       cancel='cancelCreateBoard'}}
 {{/each}}
 
 {{#link-to 'boards/new'}}
