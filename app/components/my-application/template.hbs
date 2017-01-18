@@ -30,11 +30,11 @@
   {{flash-message flash=flash}}
 {{/each}}
 
-<div class="full">
+{{#if isAuthenticated}}
+  {{#link-to "boards"}}Show Boards{{/link-to}}
+{{/if}}
 
-  {{#link-to 'boards'}}
-    Show Your Boards
-  {{/link-to}}
+<div class="full">
 
   <div class="col-md-8 col-md-offset-2">
     {{outlet}}

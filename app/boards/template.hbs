@@ -2,7 +2,8 @@
 
 {{#each model as |board|}}
   {{board-details/card board=board
-                       cancel='cancelCreateBoard'}}
+                       cancel='cancelCreateBoard'
+                       edit='editBoard'}}
 {{/each}}
 
 {{#link-to 'boards/new'}}
