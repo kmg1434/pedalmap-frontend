@@ -10,8 +10,8 @@ export default Ember.Route.extend({
       board.save();
     },
 
-    cancelCreateBoard (board) {
-      console.log('in boards/new route cancelCreateBoard');
+    cancel (board) {
+      console.log('in boards/new route cancel');
       board.rollbackAttributes();
     },
   },
