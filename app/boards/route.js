@@ -6,9 +6,9 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    editBoard () {
+    editBoard (board) {
       console.log('inside boards/route editBoard()');
-      this.transitionTo('board/edit'); // why won't this work?
+      this.transitionTo('board/edit', board);
     },
 
     deleteBoard (board) {

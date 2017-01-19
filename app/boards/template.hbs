@@ -1,11 +1,11 @@
-<h4>Your Saved Boards:</h4>
+<h4>Your Boards</h4>
 
 {{#each model as |board|}}
-  {{board-list/card board=board deleteBoard='deleteBoard'
+  {{board-card board=board deleteBoard='deleteBoard'
                                 cancel='cancelCreateBoard'
                                 editBoard='editBoard'}}
 {{/each}}
 
 {{#link-to 'boards/new'}}
-  <button class="btn">Add a New Board</button>
+  <button class="btn">Add Board</button>
 {{/link-to}}
