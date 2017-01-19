@@ -1,10 +1,9 @@
 <h4>Your Saved Boards:</h4>
 
 {{#each model as |board|}}
-  {{board-list/card board=board
-                       deleteBoard='deleteBoard'
-                       cancel='cancelCreateBoard'
-                       editBoard='editBoard'}}
+  {{board-list/card board=board deleteBoard='deleteBoard'
+                                cancel='cancelCreateBoard'
+                                editBoard='editBoard'}}
 {{/each}}
 
 {{#link-to 'boards/new'}}

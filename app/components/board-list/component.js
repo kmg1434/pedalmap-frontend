@@ -6,10 +6,6 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    editBoard () {
-      // board.save();
-    },
-
     deleteBoard () {
       console.log('inside board-list');
       this.sendAction('deleteBoard', this.get('board'));
