@@ -50,6 +50,8 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
+    ENV.rootURL = '/pedalmap-frontend';
+    ENV.apiHost = 'https://shielded-brook-64148.herokuapp.com';
   }
 
   return ENV;
