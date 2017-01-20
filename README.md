@@ -11,8 +11,8 @@
 This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
 
 # Screenshot
-
-[Imgur](http://i.imgur.com/m6CeQxJ.png)
+![Active Game State](http://i.imgur.com/m6CeQxJ.png)
+![Imgur](http://i.imgur.com/m6CeQxJ.png)
 
 
 ## Technologies Used
