@@ -10,6 +10,7 @@
 
 # Introduction
 
+<<<<<<< HEAD
 Note: User authentication is required to use this application, so please sign up
  before using it!
 
@@ -21,6 +22,12 @@ that they neatly (or not so neatly) fit on a board of some shape or size, most
 commonly a rectangle wider than it is long. This application will help
 musicians determine just how big their pedal board has to be before purchasing
 pedals.
+=======
+This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
+
+## Screenshot
+![Active Game State](http://i.imgur.com/m6CeQxJ.png)
+>>>>>>> components
 
 ## Technologies Used
 
@@ -30,6 +37,12 @@ pedals.
 - CSS
 - Handlebars
 - Git, Github.com, and GitHub Pages
+
+## Installation Instructions
+
+Install with `npm install` and `bower install` in your terminal.
+
+## Wireframes
 
 ## Development Process
 
