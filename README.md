@@ -8,7 +8,10 @@
 
 # Introduction
 
-This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application. 
+This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
+
+![alt text](http://imgur.com/m6CeQxJ "Pedal Map Screenshot")
+
 
 ## Technologies Used
 

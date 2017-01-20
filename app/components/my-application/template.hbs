@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "boards"}}Boards{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -24,17 +24,12 @@
 </nav>
 {{!-- NAV BAR end --}}
 
-<h1 class="pedalmap-header">~PedalMap~</h1>
+<h1 class="pedalmap-header">~ Pedal Map ~</h1>
+<hr>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
-
-{{#if isAuthenticated}}
-  {{#link-to "boards"}}
-    <button class="btn">Show Boards</button>
-  {{/link-to}}
-{{/if}}
 
 <div class="full">
 
