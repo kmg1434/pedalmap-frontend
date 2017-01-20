@@ -1,5 +1,7 @@
-# Ear Training
+# PedalMap
 ### by Kevin Grady
+
+
 [Try it here!](https://kmg1434.github.io/pedalmap-fron)
 
 [Front end Repo](https://github.com/kmg1434/ear-training-front-end)
@@ -8,12 +10,22 @@
 
 # Introduction
 
-This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application. 
+Note: User authentication is required to use this application, so please sign up
+ before using it!
+
+This program is a browser based utility for musicians who own, or plan to own,
+a collection of effects pedals. Musicians tend to switch up their equiptment
+often, and suffer from what is known as GAS (gear aquisition syndrome). A
+collection of pedals will be sorted in a particular order and orientation so
+that they neatly (or not so neatly) fit on a board of some shape or size, most
+commonly a rectangle wider than it is long. This application will help
+musicians determine just how big their pedal board has to be before purchasing
+pedals.
 
 ## Technologies Used
 
-- Ember
-- Javascript
+- Ember (front end framework)
+- JavaScript
 - HTML
 - CSS
 - Handlebars
@@ -22,25 +34,21 @@ This program demonstrates a browser based utility for musicians or artists who o
 ## Development Process
 
 1. Plan wireframes and user stories
-2. Develop data structures and relations, create ERD
-3. Tackle HTML first to give a graphical UI
-4. Create functionality for Sign up/in/out and change password buttons (auth)
-5. Crate functionality for CRUD on a user resource (games)
-5. Develop game engine and logic
-6. Switch all console logs to user readable on screen messages.
+2. Develop data structures and models, creating a front end ERD
+3. Develop user authentication functionality (Sign up/in/out, change password)
+4. Develop functionality for CRUD on user resources (boards and pedals)
+5. Develop graphical representation of boards and pedals
 7. Develop ReadMe.md file
 
 ## Problem Solving Strategy
 
-I mostly used error-driven development, working from the interface. Creating UI
-first and working towards its functionality, feature by feature.
-I console.log() all valuable data for testing purposes as I code, and add/commit
-changes as soon as the current feature is functional. I would continually walk
-through all function calls from the first click to understand the flow of the
-API and the locally hosted server. Being able to read the HTTP codes was very
-helpful for making sure my API functionality was correct. After all local API
-functionality, the server was switched over to heroku and the process was
-repeated.
+I followed the "data down / action up" Ember model, using error-driven
+development, generally working from the interface upwards. A general
+feature-through strategy starts by creating a button, sending an action,
+logging the action and location in the console, and tracing it back to the
+route, where Ember can communicate with the back-end ERD. Creating UI
+first and working towards its functionality, feature by feature, has been more
+effective for me than working from the route downwards
 
 ## Future Features
 
@@ -51,12 +59,12 @@ repeated.
 
 ## As A User:
 
-- I can sign up, sign in, sign out, and change Password
-- I can create, read, update, and delete a game
-- I have ownership over my games
-- I can update the score of my game every turn
-- I can see how many games I have played
-- I will know intuitively how to use the interface
+- I can sign up, sign in, sign out, and change my Password
+- I can create, read, update, and delete a board
+- I have ownership over my boards
+- I can see how many boards I have
+- I can update the contents and attributes of my boards
+- I will know intuitively how to use the interface without instruction
 
 ## Wireframes
 
