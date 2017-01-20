@@ -44,6 +44,10 @@ Install with `npm install` and `bower install` in your terminal.
 
 ## Wireframes
 
+![Wireframes](http://imgur.com/R27lQxI)
+
+![Wireframes](http://imgur.com/qVQ4V5N)
+
 ## Development Process
 
 1. Plan wireframes and user stories
