@@ -27,7 +27,6 @@ This program demonstrates a browser based utility for musicians or artists who o
 
 ## Screenshot
 ![Active Game State](http://i.imgur.com/m6CeQxJ.png)
->>>>>>> components
 
 ## Technologies Used
 
@@ -44,9 +43,9 @@ Install with `npm install` and `bower install` in your terminal.
 
 ## Wireframes
 
-![Wireframes](http://imgur.com/R27lQxI)
+![Imgur](http://imgur.com/R27lQxI.png)
 
-![Wireframes](http://imgur.com/qVQ4V5N)
+![Imgur](http://imgur.com/qVQ4V5N.png)
 
 ## Development Process
 
