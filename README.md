@@ -10,7 +10,9 @@
 
 This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
 
-![alt text](http://imgur.com/m6CeQxJ "Pedal Map Screenshot")
+# Screenshot
+
+[Imgur](http://i.imgur.com/m6CeQxJ.png)
 
 
 ## Technologies Used
