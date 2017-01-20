@@ -1,0 +1,14 @@
+<form {{action 'save' on='submit'}}>
+  Board Title{{input placeholder='Board Title'
+          value=board.name}}
+  Length{{input placeholder='Board Length (inches)'
+          value=board.length
+          type='number' step='0.01'
+          required='true'}}
+  Width{{input placeholder='Board Width (inches)'
+          value=board.width
+          type='number' step='0.01'
+          required='true'}}
+  <button type='submit' class='btn btn-xs'>Save</button>
+  <button {{action 'cancel'}} class='btn btn-xs btn-danger'>Cancel</button>
+</form>

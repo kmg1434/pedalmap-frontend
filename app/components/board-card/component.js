@@ -5,12 +5,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     editBoard () {
-      console.log('inside board-list/card/component editBoard()');
+      console.log('inside board-card/component editBoard()');
       this.sendAction('editBoard', this.get('board'));
     },
 
     deleteBoard () {
-      console.log('inside board-list/card');
+      console.log('inside board-card component');
       this.sendAction('deleteBoard', this.get('board'));
     },
   },

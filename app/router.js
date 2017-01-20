@@ -13,9 +13,7 @@ Router.map(function () {
 
   this.route('boards');
   this.route('boards/new');
-  this.route('board', { path: 'boards/:board_id' }, function() {
-    this.route('edit');
-  });
+  this.route('board', { path: 'boards/:board_id' });
   this.route('board/edit', { path: 'boards/:board_id/edit' });
 });
 
