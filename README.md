@@ -10,10 +10,8 @@
 
 This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
 
-# Screenshot
+## Screenshot
 ![Active Game State](http://i.imgur.com/m6CeQxJ.png)
-![Imgur](http://i.imgur.com/m6CeQxJ.png)
-
 
 ## Technologies Used
 
@@ -23,6 +21,12 @@ This program demonstrates a browser based utility for musicians or artists who o
 - CSS
 - Handlebars
 - Git, Github.com, and GitHub Pages
+
+## Installation Instructions
+
+Install with `npm install` and `bower install` in your terminal.
+
+## Wireframes
 
 ## Development Process
 
