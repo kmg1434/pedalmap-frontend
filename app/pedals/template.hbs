@@ -1,0 +1,11 @@
+<h4>Pedals</h4>
+
+{{#each model as |pedal|}}
+  {{pedal-card pedal=pedal deletePedal='deletePedal'
+                                cancel='cancelCreatePedal'
+                                editPedal='editPedal'}}
+{{/each}}
+
+{{#link-to 'pedals/new'}}
+  <button class="btn">Add Pedal</button>
+{{/link-to}}
