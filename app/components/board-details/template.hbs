@@ -2,13 +2,13 @@
 
 Length: {{board.length}} <br>
 Width: {{board.width}} <br>
-{{!-- Pedals: {{board.pedals}} --}}
+Pedals: {{board.pedals}}
 
-{{!-- {{#each board.pedals as |pedal|}}
+{{#each board.pedals as |pedal|}}
   {{board-details/item item=item
                     toggleDone='toggleItemDone'
                     delete='deleteItem'}}
-{{/each}} --}}
+{{/each}}
 
 <hr>
 {{#link-to 'boards'}}

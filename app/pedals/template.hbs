@@ -1,0 +1,15 @@
+<h4>All Pedals</h4>
+<hr>
+
+{{#each model as |pedal|}}
+  {{pedal-card pedal=pedal deletePedal='deletePedal'
+                           cancel='cancelCreatePedal'
+                           editPedal='editPedal'}}
+{{/each}}
+<hr>
+
+<span>Can't find a certain pedal?</span>
+
+{{#link-to 'pedals/new'}}
+  <button class="btn">Add a pedal</button>
+{{/link-to}}
