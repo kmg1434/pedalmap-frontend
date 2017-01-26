@@ -5,11 +5,11 @@ export default Ember.Component.extend({
   actions: {
 
     save () {
-      this.sendAction('save', this.get('board'));
+      this.sendAction('save', this.get('pedal'));
     },
 
     cancel () {
-      this.sendAction('cancel', this.get('board'));
+      this.sendAction('cancel', this.get('pedal'));
     },
 
   },

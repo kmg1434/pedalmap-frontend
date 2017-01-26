@@ -13,8 +13,18 @@ export default Ember.Route.extend({
       });
     },
 
-    cancelEditBoard () {
+    cancelEditBoard (board) {
+      board.rollbackAttributes();
       this.transitionTo('boards');
+
+    },
+
+    willTransition () {
+      this.get('store').peekAll('board').forEach(function (board) {
+        if (board.get('hasDirtyAttributes')) {
+          board.rollbackAttributes();
+        }
+      });
     },
   },
 });

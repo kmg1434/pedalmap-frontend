@@ -6,6 +6,13 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    // not sure yet
+
+    editPedal (pedal) {
+      this.transitionTo('pedal/edit', pedal);
+    },
+
+    deletePedal (pedal) {
+      pedal.destroyRecord();
+    },
   },
 });

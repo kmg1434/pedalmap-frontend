@@ -1,11 +1,12 @@
 <h4>Your Boards</h4>
+<hr>
 
 {{#each model as |board|}}
   {{board-card board=board deleteBoard='deleteBoard'
                                 cancel='cancelCreateBoard'
                                 editBoard='editBoard'}}
 {{/each}}
-
+<hr>
 {{#link-to 'boards/new'}}
   <button class="btn">Add Board</button>
 {{/link-to}}

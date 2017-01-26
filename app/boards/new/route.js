@@ -12,10 +12,17 @@ export default Ember.Route.extend({
     },
 
     cancel (board) {
-      console.log('in boards/new route cancel');
       board.rollbackAttributes();
       this.transitionTo('boards');
 
+    },
+
+    willTransition () {
+      this.get('store').peekAll('board').forEach(function (board) {
+        if (board.get('hasDirtyAttributes')) {
+          board.rollbackAttributes();
+        }
+      });
     },
   },
 });

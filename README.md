@@ -22,6 +22,11 @@ commonly a rectangle wider than it is long. This application will help
 musicians determine just how big their pedal board has to be before purchasing
 pedals.
 
+This program demonstrates a browser based utility for musicians or artists who own or plan to own a collection of effects pedals. User authentication is required to use this application.
+
+## Screenshot
+![Active Game State](http://i.imgur.com/m6CeQxJ.png)
+
 ## Technologies Used
 
 - Ember (front end framework)
@@ -30,6 +35,16 @@ pedals.
 - CSS
 - Handlebars
 - Git, Github.com, and GitHub Pages
+
+## Installation Instructions
+
+Install with `npm install` and `bower install` in your terminal.
+
+## Wireframes
+
+![Imgur](http://imgur.com/R27lQxI.png)
+
+![Imgur](http://imgur.com/qVQ4V5N.png)
 
 ## Development Process
 
@@ -65,9 +80,3 @@ effective for me than working from the route downwards
 - I can see how many boards I have
 - I can update the contents and attributes of my boards
 - I will know intuitively how to use the interface without instruction
-
-## Wireframes
-
-[Main Page](./full-stack-wireframe.png)
-
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
