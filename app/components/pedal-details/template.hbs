@@ -1,1 +1,18 @@
-{{yield}}
+<h3 class="pedal-header">{{pedal.name}}</h3>
+
+Length: {{pedal.length}} <br>
+Width: {{pedal.width}} <br>
+<img src="{{pedal.link}}" alt="Pedal Image" height="200" width="200"><br>
+<a href="{{pedal.link}}">Image</a><br>
+Boards: {{pedal.pedals}}
+
+{{#each pedal.boards as |board|}}
+  {{board-card board=board
+                    toggleDone='toggleItemDone'
+                    delete='deleteItem'}}
+{{/each}}
+
+<hr>
+{{#link-to 'pedals'}}
+  Back to Pedal List
+{{/link-to}}
