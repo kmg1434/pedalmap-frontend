@@ -1,0 +1,20 @@
+<form {{action 'save' on='submit'}}>
+  Pedal Title{{input placeholder='Pedal Title'
+          value=pedal.name
+          required='true'}}
+          <br>
+  Length{{input placeholder='Pedal Length (inches)'
+          value=pedal.length
+          type='number' step='0.001'
+          required='true'}}
+          <br>
+  Width{{input placeholder='Pedal Width (inches)'
+          value=pedal.width
+          type='number' step='0.001'
+          required='true'}}
+          <br>
+  Link{{input placeholder='http://link-to-image-of-pedal.com'}}
+          <hr>
+  <button type='submit' class='btn btn-sm'>Save</button>
+  <button {{action 'cancel'}} class='btn btn-sm btn-danger'>Cancel</button>
+</form>
