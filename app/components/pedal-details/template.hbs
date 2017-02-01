@@ -1,16 +1,31 @@
 <h3 class="pedal-header">{{pedal.name}}</h3>
+<button class='btn btn-primary btn-xs' {{action 'editPedal'}}>Edit</button>
+<button class='btn btn-default btn-xs btn-danger' {{action 'deletePedal'}}>Delete</button>
+<div class='pedal-stats'>
+  Length: {{pedal.length}} Inches<br>
+  Width: {{pedal.width}} Inches<br>
+</div>
+<img class='pedal-image' src="{{pedal.link}}" alt="Pedal Image"><br><br>
 
-Length: {{pedal.length}} <br>
-Width: {{pedal.width}} <br>
-<img src="{{pedal.link}}" alt="Pedal Image" height="200" width="200"><br>
-<a href="{{pedal.link}}">Image</a><br>
-Boards: {{pedal.pedals}}
+<a href="{{pedal.info}}">Product Page</a><br>
+<hr>
 
-{{#each pedal.boards as |board|}}
-  {{board-card board=board
-                    toggleDone='toggleItemDone'
-                    delete='deleteItem'}}
+{{#each board as |board|}}
+  <li><a href="#">{{board.name}}</a></li>
 {{/each}}
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Add pedal to board
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    {{!-- List of all users boards --}}
+    {{#each board as |board|}}
+      <li><a href="#" {{action 'attach'}}>{{board.name}}</a></li>
+    {{/each}}
+  </ul>
+</div>
 
 <hr>
 {{#link-to 'pedals'}}

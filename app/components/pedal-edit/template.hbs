@@ -3,18 +3,22 @@
           value=pedal.name
           required='true'}}
           <br>
-  Length{{input placeholder='Pedal Length (inches)'
+  Length (inches){{input placeholder='Pedal Length (inches)'
           value=pedal.length
           type='number' step='0.001'
           required='true'}}
           <br>
-  Width{{input placeholder='Pedal Width (inches)'
+  Width (inches){{input placeholder='Pedal Width (inches)'
           value=pedal.width
           type='number' step='0.001'
           required='true'}}
           <br>
-  Link{{input placeholder='http://link-to-image-of-pedal.com'
+  Link to Image{{input placeholder='http://link-to-image-of-pedal.com'
           value=pedal.link
+          type='string'}}
+          <br>
+  Official Product Page{{input placeholder='URL to company site'
+          value=pedal.info
           type='string'}}
           <hr>
   <button type='submit' class='btn btn-sm'>Save</button>

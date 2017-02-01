@@ -1,7 +1,7 @@
 <h3 class="board-header">{{board.name}}</h3>
 
-Length: {{board.length}} <br>
-Width: {{board.width}} <br>
+Length: {{board.length}} Inches<br>
+Width: {{board.width}} Inches <br>
 Pedals: {{board.pedals}}
 
 {{#each board.pedals as |pedal|}}
@@ -9,8 +9,14 @@ Pedals: {{board.pedals}}
                     toggleDone='toggleItemDone'
                     delete='deleteItem'}}
 {{/each}}
+<br>
+  {{#link-to 'pedals'}}
+    <button class='btn btn-sm'>
+      Add a Pedal to your Board
+    </button>
+  {{/link-to}}
 
 <hr>
 {{#link-to 'boards'}}
-  Back
+  Back to your boards
 {{/link-to}}

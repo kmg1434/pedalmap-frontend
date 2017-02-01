@@ -14,5 +14,15 @@ export default Ember.Route.extend({
     deletePedal (pedal) {
       pedal.destroyRecord();
     },
+
+    // attach () {
+    //   let _this = this;
+    //   return new Ember.RSVP.Promise(function (resolve) {
+    //     _this.store.findAll('board')
+    //       .then(function (boards) {
+    //       resolve(boards.filterBy('ytid', ytid));
+    //       });
+    //   });
+    // },
   },
 });
