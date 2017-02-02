@@ -4,16 +4,18 @@ export default Ember.Component.extend({
 
   actions: {
     editPedal () {
-
       this.sendAction('editPedal', this.get('pedal'));
-
-      // this.transitionTo('pedal/edit', pedal);
     },
 
     deletePedal () {
-      this.sendAction('editPedal', this.get('pedal'));
+      this.sendAction('deletePedal', this.get('pedal'));
+    },
 
-      // pedal.destroyRecord();
+    attach () {
+      this.sendAction('attach', this.get('velcro'));
+
+      // this.get('store').peekAll('velcro').forEach(function (board) {
+      // this.sendAction('attach', this.get('velcro'));
     },
   },
 });

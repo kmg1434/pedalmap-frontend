@@ -25,6 +25,9 @@ Router.map(function () {
   this.route('pedals/new');
   this.route('pedal', { path: 'pedals/:pedal_id' });
   this.route('pedal/edit', { path: 'pedals/:pedal_id/edit' });
+
+  // velcro routes
+  this.route('velcro/new');
 });
 
 export default Router;

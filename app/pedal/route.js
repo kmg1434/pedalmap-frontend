@@ -13,6 +13,11 @@ export default Ember.Route.extend({
 
     deletePedal (pedal) {
       pedal.destroyRecord();
+      this.transitionTo('pedals');
+    },
+
+    attach (velcro) {
+      velcro.save();
     },
   },
 });

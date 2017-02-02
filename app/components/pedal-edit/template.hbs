@@ -15,11 +15,13 @@
           <br>
   Link to Image{{input placeholder='http://link-to-image-of-pedal.com'
           value=pedal.link
-          type='string'}}
+          type='string'
+          required='true'}}
           <br>
   Official Product Page{{input placeholder='URL to company site'
           value=pedal.info
-          type='string'}}
+          type='string'
+          required='true'}}
           <hr>
   <button type='submit' class='btn btn-sm'>Save</button>
   <button {{action 'cancel'}} class='btn btn-sm btn-danger'>Cancel</button>
