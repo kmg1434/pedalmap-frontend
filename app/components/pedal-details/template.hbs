@@ -5,6 +5,7 @@
 <div class='pedal-stats'>
   Length: {{pedal.length}} Inches<br>
   Width: {{pedal.width}} Inches<br>
+  <br>
 </div>
 <img class='pedal-image' src="{{pedal.link}}" alt="Pedal Image"><br><br>
 
@@ -15,7 +16,7 @@
   <li><a href="#">{{board.name}}</a></li>
 {{/each}}
 
-<button class="add-pedal-to-board" {{action "attach"}}>Add to Board</button>
+<button class="btn btn-xs add-pedal-to-board" {{action "attach"}}>Add to Board</button>
 {{#each board as |board|}}
   {{board-card}}
 {{/each}}

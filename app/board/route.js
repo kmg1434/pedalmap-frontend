@@ -7,14 +7,12 @@ export default Ember.Route.extend({
 
   actions: {
     editBoard (board) {
-      console.log('got to board route edit');
       this.transitionTo('board/edit', board);
     },
 
     deleteBoard (board) {
-      console.log('got to board route delete');
       board.destroyRecord();
-      this.transitionTo('boards', board);
+      this.transitionTo('boards');
     },
   },
 });

@@ -1,11 +1,13 @@
-<h3 class="board-header">{{board.name}}</h3>
+<h3 class="pedal-header">{{board.name}}</h3>
 
 <button class='btn btn-primary btn-sm' {{action 'editBoard'}}>Edit</button>
 <button class='btn btn-default btn-sm btn-danger' {{action 'deleteBoard'}}>Delete</button><br><br>
 
+<div class="pedal-stats">
 Length: {{board.length}} Inches<br>
-Width: {{board.width}} Inches <br><br>
-Pedals: {{board.pedals}}
+Width: {{board.width}} Inches <br>
+</div><br>
+{{!-- Pedals: {{board.pedals}} --}}
 
 {{!-- <div class="board-image" length="{{board.length}}" width="{{board.width}}">Board</div> --}}
 

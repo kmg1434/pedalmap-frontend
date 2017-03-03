@@ -13,6 +13,15 @@ body {
   background-image: url('https://i.imgur.com/PvMjacT.jpg');
 }
 
+.pedal-card {
+  font-size: 24px;
+  margin: 5px auto;
+  padding: 5px 5px 5px 5px;
+  max-width: 500px;
+  background-color: black;
+  border: 2px solid white;
+}
+
 .full .col-md-8 {
   text-align: center;
   box-shadow: 8px 8px 10px black;
@@ -33,7 +42,28 @@ body {
   max-width: 400px;
 }
 
+.pedal-header {
+  color: #f2f2f2;
+}
+
 .pedal-image {
   max-height: 600px;
   max-width: 300px;
+}
+
+.welcome {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  font-size: 16px;
+  color: #f2f2f2;
+}
+
+.welcome-image {
+  max-width: 650px;
+  border: 2px solid black;
+}
+
+.pedal-stats {
+  color: #f2f2f2;
 }
